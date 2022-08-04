@@ -20,6 +20,11 @@ getArgument(`10`);
 // print out a sentence that includes the name of the company and the range
 // itself (if the numbers passed in are 90000 and 110000, the pay range is
 // 20000).
+function showPayRange(companyName, minPay, maxPay) {
+  console.log(`${companyName} has a pay band of ${maxPay - minPay}`)
+}
+
+showPayRange(`Initech`, 80000, 120000);
 
 // 4: Write a function that satifies the following interaction pattern:
 
