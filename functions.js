@@ -27,15 +27,26 @@ function showPayRange(companyName, minPay, maxPay) {
 showPayRange(`Initech`, 80000, 120000);
 
 // 4: Write a function that satifies the following interaction pattern:
+function checkStock(quantity, item) {
+  if (quantity >= 4) {
+    console.log(`${item} is stocked.`);
+  }
+  else if (0 < quantity && quantity < 4) {
+    console.log(`${item} - running LOW`);
+  }
+  else {
+    console.log(`${item} - OUT of stock!`);
+  }
+}
 
-// checkStock(4, "Coffee");
+checkStock(4, "Coffee");
 // => "Coffee is stocked"
 
-// checkStock(3, "Tortillas");
-// // => "Tortillas - running LOW"
-//
-// checkStock(0, "Cheese");
-// // => "Cheese - OUT of stock!"
-//
-// checkStock(1, "Salsa");
+checkStock(3, "Tortillas");
+// => "Tortillas - running LOW"
+
+checkStock(0, "Cheese");
+// => "Cheese - OUT of stock!"
+
+checkStock(1, "Salsa");
 // => "Salsa - running LOW"
